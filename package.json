@@ -1,6 +1,6 @@
 {
   "name": "@datastructures-js/stack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "stack implementation in javascript",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datatructures-js/stack.git"
+    "url": "git+https://github.com/datastructures-js/stack.git"
   },
   "keywords": [
-    "stack es6",
     "stack",
+    "stack es6",
     "stack js"
   ],
   "author": "Eyas Ranjous <eyas.ranjous@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/datatructures-js/stack/issues"
+    "url": "https://github.com/datastructures-js/stack/issues"
   },
-  "homepage": "https://github.com/datatructures-js/stack#readme",
+  "homepage": "https://github.com/datastructures-js/stack#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^4.19.1",

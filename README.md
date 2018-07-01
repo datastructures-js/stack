@@ -50,10 +50,18 @@ returns the length length of the stack.
 console.log(stack.length()); // 0
 ```
 
+
+**.clear()** 
+
+clears the stack
+```javascript
+stack.clear();
+```
+
 ## Build
 ```
 grunt build
 ```
 
 ## License
-The MIT License. Full License is [here](https://github.com/eyas-ranjous/datastructures-js/stack/blob/master/LICENSE)
+The MIT License. Full License is [here](https://github.com/datastructures-js/stack/blob/master/LICENSE)
