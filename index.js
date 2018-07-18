@@ -1,5 +1,5 @@
 /**
- * datastructures-js/Stack
+ * datastructures-js/stack
  * @copyright 2018 Eyas Ranjous <eyas.ranjous@gmail.com>
  * @license MIT
  */
