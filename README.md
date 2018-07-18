@@ -1,4 +1,4 @@
-# # @datastrucures-js/stack
+# @datastrucures-js/stack
 
 [![build:?](https://travis-ci.org/datastructures-js/stack.svg?branch=master)](https://travis-ci.org/datastructures-js/stack) 
 [![npm](https://img.shields.io/npm/v/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
