@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const stackFn = require('./index');
 
 describe('stack tests', () => {
-  const s = stackFn();
+  const stack = stackFn();
 
   describe('.push(element)', () => {
     it('should push elements to the top of the stack', () => {
@@ -21,7 +21,8 @@ describe('stack tests', () => {
   });
 
   describe('.peek()', () => {
-    it('should peek the top element', () => expect(stack.peek()).to.equal('3th'));
+    it('should peek the top element', () =>
+      expect(stack.peek()).to.equal('3th'));
   });
 
   describe('.pop()', () => {
