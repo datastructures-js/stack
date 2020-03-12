@@ -24,6 +24,12 @@ A wrapper around javascript array push/pop with a standard stack interface.
  * [Build](#build)
  * [License](#license)
 
+## Install
+
+```sh
+npm install --save @datastructures-js/stack
+```
+
 ## API
 
 ### require
