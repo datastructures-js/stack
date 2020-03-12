@@ -19,6 +19,7 @@ A wrapper around javascript array push/pop with a standard stack interface.
   * [.pop()](#pop)
   * [.isEmpty()](#isempty)
   * [.size()](#size)
+  * [.clone()](#clone)
   * [.toArray()](#toarray)
   * [.clear()](#clear)
  * [Build](#build)
