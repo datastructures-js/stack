@@ -13,7 +13,7 @@ class Stack {
   }
 
   /**
-   * checks if the queue is empty
+   * checks if the stack is empty
    * @public
    * @returns {boolean}
    */
@@ -71,7 +71,7 @@ class Stack {
   }
 
   /**
-   * clears all elements from the queue
+   * clears all elements from the stack
    * @public
    */
   clear() {
@@ -79,9 +79,9 @@ class Stack {
   }
 
   /**
-   * creates a shallow copy from the queue
+   * creates a shallow copy from the stack
    * @public
-   * @return {Queue}
+   * @return {Stack}
    */
   clone() {
     return new Stack(this.elements.slice(0));
