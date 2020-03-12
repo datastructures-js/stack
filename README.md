@@ -207,8 +207,8 @@ const clone =  stack.clone();
 
 clone.pop();
 
-console.log(stack.front()); // { id: 8 }
-console.log(clone.front()); // { id: 4 }
+console.log(stack.peek()); // { id: 8 }
+console.log(clone.peek()); // { id: 4 }
 ```
 
 ### .toArray()
@@ -228,9 +228,7 @@ returns a copy of the remaining elements as an array.
 </table>
 
 ```js
-stack.push(4);
-stack.push(2);
-console.log(stack.toArray()); // [20, 4, 2]
+console.log(stack.toArray()); // [{ id: 2 }, { id: 4 } , { id: 8 }]
 ```
 
 ### .clear()
