@@ -73,12 +73,6 @@ const stack = Stack.fromArray(list);
 const stack = Stack.fromArray(list.slice(0));
 ```
 
-If the list should not be mutated, simply construct the stack from a copy of it.
-
-```js
-const stack = new Stack(list.slice(0));
-```
-
 ### .push(element)
 push an element to the top of the stack.
 
