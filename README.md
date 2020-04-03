@@ -54,7 +54,7 @@ import Stack from '@datastructures-js/stack';
 const stack = new Stack();
 
 // from an array
-const stack = ne Stack([10, 3, 8, 40, 1]);
+const stack = new Stack([10, 3, 8, 40, 1]);
 ```
 
 #### using "Stack.fromArray(array)"
