@@ -1,21 +1,21 @@
 /**
- * @datastructures-js/stack
- * @copyright 2020 Eyas Ranjous <eyas.ranjous@gmail.com>
  * @license MIT
- */
-
-/**
- * @class Stack
- * implements LIFO principle.
+ * @copyright 2020 Eyas Ranjous <eyas.ranjous@gmail.com>
+ *
+ * @class
  */
 class Stack {
+  /**
+   * Creates a stack.
+   * @param {array} [elements]
+   */
   constructor(elements) {
     this._elements = Array.isArray(elements) ? elements : [];
   }
 
   /**
+   * Checks if the stack is empty.
    * @public
-   * checks if the stack is empty
    * @returns {boolean}
    */
   isEmpty() {
@@ -23,8 +23,8 @@ class Stack {
   }
 
   /**
+   * Returns the number of elements in the stack.
    * @public
-   * returns the number of elements in the stack
    * @returns {number}
    */
   size() {
@@ -32,8 +32,8 @@ class Stack {
   }
 
   /**
+   * Returns the top element in the stack.
    * @public
-   * returns the top element in the stack
    * @returns {object}
    */
   peek() {
@@ -43,8 +43,8 @@ class Stack {
   }
 
   /**
+   * Adds an element to the top of the stack.
    * @public
-   * adds an element to the top of the stack
    * @param {object} element
    */
   push(element) {
@@ -52,8 +52,8 @@ class Stack {
   }
 
   /**
+   * Removes and returns the top element in the stack.
    * @public
-   * removes and returns the top element in the stack
    * @returns {object}
    */
   pop() {
@@ -63,36 +63,36 @@ class Stack {
   }
 
   /**
+   * Returns the remaining elements as an array.
    * @public
-   * returns the remaining elements as an array
    * @returns {array}
    */
   toArray() {
-    return this._elements.slice(0);
+    return this._elements.slice();
   }
 
   /**
+   * Clears all elements from the stack.
    * @public
-   * clears all elements from the stack
    */
   clear() {
     this._elements = [];
   }
 
   /**
+   * Creates a shallow copy from the stack.
    * @public
-   * creates a shallow copy from the stack
    * @return {Stack}
    */
   clone() {
-    return new Stack(this._elements.slice(0));
+    return new Stack(this._elements.slice());
   }
 
   /**
+   * Creates a stack from an existing array
    * @public
    * @static
-   * creates a stack from an existing array
-   * @param {array} elements
+   * @param {array} [elements]
    * @return {Stack}
    */
   static fromArray(elements) {
