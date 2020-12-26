@@ -8,9 +8,9 @@ A wrapper around javascript array push/pop with a standard stack interface.
 
 # Table of Contents
 * [Install](#install)
+* [require](#require)
+* [import](#import)
 * [API](#api)
-  * [require](#require)
-  * [import](#import)
   * [Construction](#construction)
   * [.push(element)](#pushelement)
   * [.peek()](#peek)
@@ -29,25 +29,20 @@ A wrapper around javascript array push/pop with a standard stack interface.
 npm install --save @datastructures-js/stack
 ```
 
-## API
-
 ### require
-
 ```js
 const Stack = require('@datastructures-js/stack');
 ```
 
 ### import
-
 ```js
 import Stack from '@datastructures-js/stack';
 ```
+## API
 
 ### Construction
 
-#### using "new Stack(array)"
-
-##### Example
+#### using "new"
 
 ```js
 // empty stack
@@ -57,9 +52,7 @@ const stack = new Stack();
 const stack = new Stack([10, 3, 8, 40, 1]);
 ```
 
-#### using "Stack.fromArray(array)"
-
-##### Example
+#### using ".fromArray"
 
 ```js
 // empty stack
@@ -69,8 +62,8 @@ const stack = Stack.fromArray([]);
 const list = [10, 3, 8, 40, 1];
 const stack = Stack.fromArray(list);
 
-// If the list should not be mutated, simply construct the stack from a copy of it.
-const stack = Stack.fromArray(list.slice(0));
+// If the list should not be mutated, use a copy of it.
+const stack = Stack.fromArray(list.slice());
 ```
 
 ### .push(element)
