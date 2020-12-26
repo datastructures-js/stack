@@ -2,9 +2,13 @@
  * @license MIT
  * @copyright 2020 Eyas Ranjous <eyas.ranjous@gmail.com>
  *
- * @class Stack
+ * @class
  */
 class Stack {
+  /**
+   * Creates a stack.
+   * @param {array} [elements]
+   */
   constructor(elements) {
     this._elements = Array.isArray(elements) ? elements : [];
   }
@@ -64,7 +68,7 @@ class Stack {
    * @returns {array}
    */
   toArray() {
-    return this._elements.slice(0);
+    return this._elements.slice();
   }
 
   /**
@@ -81,14 +85,14 @@ class Stack {
    * @return {Stack}
    */
   clone() {
-    return new Stack(this._elements.slice(0));
+    return new Stack(this._elements.slice());
   }
 
   /**
    * Creates a stack from an existing array
    * @public
    * @static
-   * @param {array} elements
+   * @param {array} [elements]
    * @return {Stack}
    */
   static fromArray(elements) {
