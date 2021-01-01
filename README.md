@@ -70,21 +70,17 @@ const stack = Stack.fromArray(list.slice());
 push an element to the top of the stack.
 
 <table>
-  <tr><th align="center" colspan="2">params</th></tr>
- <tr><td><b>name</b></td><td><b>type</b></td></tr>
-  <tr><td>element</td><td>any</td></tr>
+  <tr>
+    <th align="center">params</th>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">element: any</td>
+    <td align="center">Stack</td>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
-</table>
-
-#### Example
 
 ```js
 stack.push('test');
@@ -94,24 +90,15 @@ stack.push('test');
 returns the top element in the stack.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>object</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">any</td>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
-</table>
-
-#### Example
 
 ```js
 console.log(stack.peek()); // test
@@ -121,24 +108,15 @@ console.log(stack.peek()); // test
 removes and returns the top element of the stack.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>object</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">any</td>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
-</table>
-
-#### Example
 
 ```js
 console.log(stack.pop()); // test
@@ -149,25 +127,15 @@ console.log(stack.peek()); // null
 checks if the stack is empty.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>boolean</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">boolean</td>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
-</table>
-
-
-#### Example
 
 ```js
 stack.push('test');
@@ -178,24 +146,15 @@ console.log(stack.isEmpty()); // false
 returns the number of elements in the stack.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>number</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">number</td>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
-</table>
-
-#### Example
 
 ```js
 console.log(stack.size()); // 1
@@ -205,24 +164,15 @@ console.log(stack.size()); // 1
 creates a shallow copy of the stack.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>Stack</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">Stack</td>
+    <td align="center">O(n)</td>
+  </tr>
 </table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(n)</td>
- </tr>
-</table>
-
-#### Example
 
 ```js
 const stack = Stack.fromArray([{ id: 2 }, { id: 4 } , { id: 8 }]);
@@ -238,21 +188,14 @@ console.log(clone.peek()); // { id: 4 }
 returns a copy of the remaining elements as an array.
 
 <table>
- <tr>
-  <th>return</th>
- </tr>
- <tr>
-  <td>array</td>
- </tr>
-</table>
-
-<table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(n)</td>
- </tr>
+  <tr>
+    <th align="center">return</th>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">array</td>
+    <td align="center">O(n)</td>
+  </tr>
 </table>
 
 ```js
@@ -263,15 +206,13 @@ console.log(stack.toArray()); // [{ id: 2 }, { id: 4 } , { id: 8 }]
 clears all elements from the stack.
 
 <table>
- <tr>
-  <th>runtime</th>
- </tr>
- <tr>
-  <td>O(1)</td>
- </tr>
+  <tr>
+    <th align="center">runtime</th>
+  </tr>
+  <tr>
+    <td align="center">O(1)</td>
+  </tr>
 </table>
-
-#### Example
 
 ```js
 stack.clear();
