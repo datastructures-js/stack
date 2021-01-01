@@ -2,7 +2,7 @@
 
 [![build:?](https://travis-ci.org/datastructures-js/stack.svg?branch=master)](https://travis-ci.org/datastructures-js/stack) 
 [![npm](https://img.shields.io/npm/v/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
-[![npm](https://img.shields.io/npm/dm/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack) [![npm](https://img.shields.io/badge/node-%3E=%206.0-blue.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
+[![npm](https://img.shields.io/npm/dm/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack) [![npm](https://img.shields.io/badge/node-%3E=%208.0-blue.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
 
 A wrapper around javascript array push/pop with a standard stack interface.
 
@@ -31,12 +31,12 @@ npm install --save @datastructures-js/stack
 
 ### require
 ```js
-const Stack = require('@datastructures-js/stack');
+const { Stack } = require('@datastructures-js/stack');
 ```
 
 ### import
 ```js
-import Stack from '@datastructures-js/stack';
+import { Stack } from '@datastructures-js/stack';
 ```
 ## API
 
