@@ -49,6 +49,7 @@ class Stack {
    */
   push(element) {
     this._elements.push(element);
+    return this;
   }
 
   /**
