@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { Stack } = require('../src/stack');
+const Stack = require('../src/stack');
 
 describe('stack tests', () => {
   const stack = new Stack();

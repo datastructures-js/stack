@@ -1,3 +1,3 @@
-const { Stack } = require('./src/stack');
+const Stack = require('./src/stack');
 
 exports.Stack = Stack;
