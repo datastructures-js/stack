@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2021-01-02
+
+### Changed
+- `.push` can now chain other stack methods.
+- named export for stack class.
+
+### Fixed
+- readme
+
 ## [2.0.4] - 2020-12-26
 ### Fixed
 - jsdoc
