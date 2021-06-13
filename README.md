@@ -194,8 +194,6 @@ creates a shallow copy of the stack.
   </tr>
 </table>
 
-##### example in JS
-
 ```js
 const stack = Stack.fromArray([{ id: 2 }, { id: 4 } , { id: 8 }]);
 const clone =  stack.clone();
