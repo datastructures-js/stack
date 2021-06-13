@@ -48,6 +48,7 @@ import { Stack } from '@datastructures-js/stack';
 
 #### using "new"
 
+##### JS
 ```js
 // empty stack
 const stack = new Stack();
@@ -56,6 +57,7 @@ const stack = new Stack();
 const stack = new Stack([10, 3, 8, 40, 1]);
 ```
 
+##### TS
 ```TS
 // empty stack
 const stack = new Stack<number>();
@@ -66,6 +68,7 @@ const stack = new Stack<number>([10, 3, 8, 40, 1]);
 
 #### using ".fromArray"
 
+##### JS
 ```js
 // empty stack
 const stack = Stack.fromArray([]);
@@ -78,6 +81,7 @@ const stack = Stack.fromArray(list);
 const stack = Stack.fromArray(list.slice());
 ```
 
+##### TS
 ```ts
 const stack = Stack.fromArray<number>([10, 3, 8, 40, 1]);
 ```
