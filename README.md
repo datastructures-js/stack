@@ -6,7 +6,7 @@
 
 A wrapper around javascript array push/pop with a standard stack interface.
 
-<img width="100" alt="product" src="https://user-images.githubusercontent.com/6517308/121812862-d0b3aa80-cc69-11eb-9f28-1380d76976e4.jpeg">
+<img width="100" alt="product" src="https://user-images.githubusercontent.com/6517308/121813072-cfcf4880-cc6a-11eb-8929-693842cec8a4.png">
 
 
 # Contents
