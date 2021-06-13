@@ -103,7 +103,7 @@ push an element to the top of the stack.
 </table>
 
 ```js
-stack.push('test');
+stack.push(11);
 ```
 
 ### .peek()
@@ -121,7 +121,7 @@ returns the top element in the stack.
 </table>
 
 ```js
-console.log(stack.peek()); // test
+console.log(stack.peek()); // 11
 ```
 
 ### .pop()
@@ -139,7 +139,7 @@ removes and returns the top element of the stack.
 </table>
 
 ```js
-console.log(stack.pop()); // test
+console.log(stack.pop()); // 11
 console.log(stack.peek()); // null
 ```
 
@@ -158,7 +158,7 @@ checks if the stack is empty.
 </table>
 
 ```js
-stack.push('test');
+stack.push(11);
 console.log(stack.isEmpty()); // false
 ```
 
@@ -193,6 +193,8 @@ creates a shallow copy of the stack.
     <td align="center">O(n)</td>
   </tr>
 </table>
+
+##### JS
 
 ```js
 const stack = Stack.fromArray([{ id: 2 }, { id: 4 } , { id: 8 }]);
