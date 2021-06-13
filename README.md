@@ -6,12 +6,15 @@
 
 A wrapper around javascript array push/pop with a standard stack interface.
 
-# Table of Contents
+<img src="https://user-images.githubusercontent.com/6517308/121813242-859a9700-cc6b-11eb-99c0-49e5bb63005b.jpg">
+
+
+# Contents
 * [Install](#install)
 * [require](#require)
 * [import](#import)
 * [API](#api)
-  * [Construction](#construction)
+  * [constructor](#constructor)
   * [.push(element)](#pushelement)
   * [.peek()](#peek)
   * [.pop()](#pop)
@@ -29,21 +32,23 @@ A wrapper around javascript array push/pop with a standard stack interface.
 npm install --save @datastructures-js/stack
 ```
 
-### require
+### JS
 ```js
 const { Stack } = require('@datastructures-js/stack');
 ```
 
-### import
+### TS
 ```js
 import { Stack } from '@datastructures-js/stack';
 ```
+
 ## API
 
-### Construction
+### constructor
 
 #### using "new"
 
+##### JS
 ```js
 // empty stack
 const stack = new Stack();
@@ -52,8 +57,18 @@ const stack = new Stack();
 const stack = new Stack([10, 3, 8, 40, 1]);
 ```
 
+##### TS
+```TS
+// empty stack
+const stack = new Stack<number>();
+
+// from an array
+const stack = new Stack<number>([10, 3, 8, 40, 1]);
+```
+
 #### using ".fromArray"
 
+##### JS
 ```js
 // empty stack
 const stack = Stack.fromArray([]);
@@ -66,7 +81,12 @@ const stack = Stack.fromArray(list);
 const stack = Stack.fromArray(list.slice());
 ```
 
-### .push(element)
+##### TS
+```ts
+const stack = Stack.fromArray<number>([10, 3, 8, 40, 1]);
+```
+
+### .push(element: T)
 push an element to the top of the stack.
 
 <table>
@@ -76,14 +96,14 @@ push an element to the top of the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">element: any</td>
-    <td align="center">Stack</td>
+    <td align="center">element: T</td>
+    <td align="center">Stack&lt;T&gt;</td>
     <td align="center">O(1)</td>
   </tr>
 </table>
 
 ```js
-stack.push('test');
+stack.push(11);
 ```
 
 ### .peek()
@@ -95,13 +115,13 @@ returns the top element in the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">any</td>
+    <td align="center">T</td>
     <td align="center">O(1)</td>
   </tr>
 </table>
 
 ```js
-console.log(stack.peek()); // test
+console.log(stack.peek()); // 11
 ```
 
 ### .pop()
@@ -113,13 +133,13 @@ removes and returns the top element of the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">any</td>
+    <td align="center">T</td>
     <td align="center">O(1)</td>
   </tr>
 </table>
 
 ```js
-console.log(stack.pop()); // test
+console.log(stack.pop()); // 11
 console.log(stack.peek()); // null
 ```
 
@@ -138,7 +158,7 @@ checks if the stack is empty.
 </table>
 
 ```js
-stack.push('test');
+stack.push(11);
 console.log(stack.isEmpty()); // false
 ```
 
