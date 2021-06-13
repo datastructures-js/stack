@@ -6,6 +6,9 @@
 
 A wrapper around javascript array push/pop with a standard stack interface.
 
+<img width="250" alt="product" src="https://user-images.githubusercontent.com/6517308/121812862-d0b3aa80-cc69-11eb-9f28-1380d76976e4.jpeg">
+
+
 # Contents
 * [Install](#install)
 * [require](#require)
