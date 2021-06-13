@@ -92,8 +92,8 @@ push an element to the top of the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">element: any</td>
-    <td align="center">Stack</td>
+    <td align="center">element: T</td>
+    <td align="center">Stack<T></td>
     <td align="center">O(1)</td>
   </tr>
 </table>
