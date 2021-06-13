@@ -93,7 +93,7 @@ push an element to the top of the stack.
   </tr>
   <tr>
     <td align="center">element: T</td>
-    <td align="center">Stack<T></td>
+    <td align="center">Stack&lt;T&gt;</td>
     <td align="center">O(1)</td>
   </tr>
 </table>
