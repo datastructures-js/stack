@@ -217,7 +217,7 @@ returns a copy of the remaining elements as an array.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">array</td>
+    <td align="center">T[]</td>
     <td align="center">O(n)</td>
   </tr>
 </table>
