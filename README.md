@@ -65,7 +65,7 @@ const stack = new Stack<number>();
 const stack = new Stack<number>([10, 3, 8, 40, 1]);
 ```
 
-#### Stack.fromArray(elements)
+### Stack.fromArray(elements)
 
 ##### JS
 ```js
