@@ -57,7 +57,7 @@ const stack = new Stack([10, 3, 8, 40, 1]);
 ```
 
 ##### TS
-```TS
+```js
 // empty stack
 const stack = new Stack<number>();
 
@@ -81,7 +81,7 @@ const stack = Stack.fromArray(list.slice());
 ```
 
 ##### TS
-```ts
+```js
 // empty stack
 const stack = Stack.fromArray<number>([]);
 
