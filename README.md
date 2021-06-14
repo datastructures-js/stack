@@ -32,12 +32,12 @@ A wrapper around javascript array push/pop with a standard stack interface.
 npm install --save @datastructures-js/stack
 ```
 
-### JS
+### require
 ```js
 const { Stack } = require('@datastructures-js/stack');
 ```
 
-### TS
+### import
 ```js
 import { Stack } from '@datastructures-js/stack';
 ```
