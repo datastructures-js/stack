@@ -15,6 +15,7 @@ A wrapper around javascript array push/pop with a standard stack interface.
 * [import](#import)
 * [API](#api)
   * [constructor](#constructor)
+  * [Stack.fromArray(elements)](#stackfromarrayelements)
   * [.push(element)](#pushelement)
   * [.peek()](#peek)
   * [.pop()](#pop)
@@ -32,12 +33,12 @@ A wrapper around javascript array push/pop with a standard stack interface.
 npm install --save @datastructures-js/stack
 ```
 
-### JS
+### require
 ```js
 const { Stack } = require('@datastructures-js/stack');
 ```
 
-### TS
+### import
 ```js
 import { Stack } from '@datastructures-js/stack';
 ```
@@ -45,8 +46,6 @@ import { Stack } from '@datastructures-js/stack';
 ## API
 
 ### constructor
-
-#### using "new"
 
 ##### JS
 ```js
@@ -66,7 +65,7 @@ const stack = new Stack<number>();
 const stack = new Stack<number>([10, 3, 8, 40, 1]);
 ```
 
-#### using ".fromArray"
+### Stack.fromArray(elements)
 
 ##### JS
 ```js
@@ -83,6 +82,11 @@ const stack = Stack.fromArray(list.slice());
 
 ##### TS
 ```ts
+// empty stack
+const stack = Stack.fromArray<number>([]);
+
+// with elements
+const list = [10, 3, 8, 40, 1];
 const stack = Stack.fromArray<number>([10, 3, 8, 40, 1]);
 ```
 
@@ -189,7 +193,7 @@ creates a shallow copy of the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">Stack</td>
+    <td align="center">Stack&lt;T&gt;</td>
     <td align="center">O(n)</td>
   </tr>
 </table>
@@ -213,7 +217,7 @@ returns a copy of the remaining elements as an array.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">array</td>
+    <td align="center">T[]</td>
     <td align="center">O(n)</td>
   </tr>
 </table>
