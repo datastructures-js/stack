@@ -193,7 +193,7 @@ creates a shallow copy of the stack.
     <th align="center">runtime</th>
   </tr>
   <tr>
-    <td align="center">Stack</td>
+    <td align="center">Stack&lt;T&gt;</td>
     <td align="center">O(n)</td>
   </tr>
 </table>
