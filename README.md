@@ -83,7 +83,7 @@ const stack = Stack.fromArray(list.slice());
 ##### TS
 ```ts
 // empty stack
-const stack = Stack.fromArray([]);
+const stack = Stack.fromArray<number>([]);
 
 // with elements
 const list = [10, 3, 8, 40, 1];
