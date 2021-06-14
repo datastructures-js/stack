@@ -90,7 +90,7 @@ const list = [10, 3, 8, 40, 1];
 const stack = Stack.fromArray<number>([10, 3, 8, 40, 1]);
 ```
 
-### .push(element: T)
+### .push(element)
 push an element to the top of the stack.
 
 <table>
