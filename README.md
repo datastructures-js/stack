@@ -82,6 +82,11 @@ const stack = Stack.fromArray(list.slice());
 
 ##### TS
 ```ts
+// empty stack
+const stack = Stack.fromArray([]);
+
+// with elements
+const list = [10, 3, 8, 40, 1];
 const stack = Stack.fromArray<number>([10, 3, 8, 40, 1]);
 ```
 
