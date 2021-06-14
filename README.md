@@ -15,6 +15,7 @@ A wrapper around javascript array push/pop with a standard stack interface.
 * [import](#import)
 * [API](#api)
   * [constructor](#constructor)
+  * [Stack.fromArray(elements)](#stackfromarrayelements)
   * [.push(element)](#pushelement)
   * [.peek()](#peek)
   * [.pop()](#pop)
@@ -46,8 +47,6 @@ import { Stack } from '@datastructures-js/stack';
 
 ### constructor
 
-#### using "new"
-
 ##### JS
 ```js
 // empty stack
@@ -66,7 +65,7 @@ const stack = new Stack<number>();
 const stack = new Stack<number>([10, 3, 8, 40, 1]);
 ```
 
-#### using ".fromArray"
+#### Stack.fromArray(elements)
 
 ##### JS
 ```js
