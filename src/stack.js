@@ -34,10 +34,12 @@ class Stack {
   /**
    * Returns the top element in the stack.
    * @public
-   * @returns {object}
+   * @returns {number|string|object}
    */
   peek() {
-    if (this.isEmpty()) return null;
+    if (this.isEmpty()) {
+      return null;
+    }
 
     return this._elements[this._elements.length - 1];
   }
@@ -45,7 +47,7 @@ class Stack {
   /**
    * Adds an element to the top of the stack.
    * @public
-   * @param {object} element
+   * @param {number|string|object} element
    */
   push(element) {
     this._elements.push(element);
@@ -55,10 +57,12 @@ class Stack {
   /**
    * Removes and returns the top element in the stack.
    * @public
-   * @returns {object}
+   * @returns {number|string|object}
    */
   pop() {
-    if (this.isEmpty()) return null;
+    if (this.isEmpty()) {
+      return null;
+    }
 
     return this._elements.pop();
   }
