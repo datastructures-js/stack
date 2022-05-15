@@ -1,6 +1,5 @@
 # @datastructures-js/stack
 
-[![build:?](https://travis-ci.org/datastructures-js/stack.svg?branch=master)](https://travis-ci.org/datastructures-js/stack) 
 [![npm](https://img.shields.io/npm/v/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
 [![npm](https://img.shields.io/npm/dm/@datastructures-js/stack.svg)](https://www.npmjs.com/package/@datastructures-js/stack) [![npm](https://img.shields.io/badge/node-%3E=%206.0-blue.svg)](https://www.npmjs.com/package/@datastructures-js/stack)
 
@@ -15,15 +14,15 @@ A wrapper around javascript array push/pop with a standard stack interface.
 * [import](#import)
 * [API](#api)
   * [constructor](#constructor)
-  * [Stack.fromArray(elements)](#stackfromarrayelements)
-  * [.push(element)](#pushelement)
-  * [.peek()](#peek)
-  * [.pop()](#pop)
-  * [.isEmpty()](#isempty)
-  * [.size()](#size)
-  * [.clone()](#clone)
-  * [.toArray()](#toarray)
-  * [.clear()](#clear)
+  * [Stack.fromArray](#stackfromarray)
+  * [.push](#push)
+  * [.peek](#peek)
+  * [.pop](#pop)
+  * [.isEmpty](#isempty)
+  * [.size](#size)
+  * [.clone](#clone)
+  * [.toArray](#toarray)
+  * [.clear](#clear)
  * [Build](#build)
  * [License](#license)
 
