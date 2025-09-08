@@ -2,9 +2,9 @@ export class Stack<T> {
   constructor(elements?: T[]);
   isEmpty(): boolean;
   size(): number;
-  peek(): T;
+  peek(): T | null;
   push(element: T): Stack<T>;
-  pop(): T;
+  pop(): T | null;
   toArray(): T[];
   clear(): void;
   clone(): Stack<T>;
